@@ -65,13 +65,34 @@ test("2ビルド更新：あとで→保存して更新→snapshotで続行", as
   await expect(page.getByText("✓ オフラインで練習できます")).toBeVisible();
   await page.getByRole("link", { name: "練習", exact: true }).click();
   await page.getByRole("button", { name: "練習を始める" }).click();
-  await page.locator(".options button").first().click();
-  await expect(page.locator(".feedback")).toBeVisible();
-  const original = await page.locator(".options").innerText();
   version = "b";
   await page.evaluate(async () => {
     await (await navigator.serviceWorker.getRegistration())?.update();
   });
+  await expect(
+    page.getByRole("button", { name: "中断して更新" }),
+  ).toBeVisible();
+  await page.evaluate(() => {
+    const original = IDBDatabase.prototype.transaction;
+    let fail = true;
+    IDBDatabase.prototype.transaction = function (stores, mode, options) {
+      if (mode === "readwrite" && fail) {
+        fail = false;
+        throw new DOMException("test failure", "QuotaExceededError");
+      }
+      return original.call(this, stores, mode, options);
+    };
+  });
+  await page.locator(".options button").first().click();
+  await expect(
+    page.getByRole("button", { name: "保存を再試行" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "中断して更新" }),
+  ).toBeDisabled();
+  await page.getByRole("button", { name: "保存を再試行" }).click();
+  await expect(page.locator(".feedback")).toBeVisible();
+  const original = await page.locator(".options").innerText();
   await expect(
     page.getByText("更新があります。学習内容を保存して更新できます。"),
   ).toBeVisible();

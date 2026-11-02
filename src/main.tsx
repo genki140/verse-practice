@@ -216,7 +216,7 @@ function App() {
             更新があります。学習内容を保存して更新できます。
             <div>
               <Button
-                disabled={busy}
+                disabled={busy || !!retry}
                 onClick={() =>
                   void run(async () => {
                     await repository.read();
