@@ -1,0 +1,509 @@
+{
+  "categories": [
+    {
+      "id": "grief",
+      "order": 1,
+      "name": "死別と希望"
+    },
+    {
+      "id": "neutrality",
+      "order": 2,
+      "name": "信仰についての質問"
+    },
+    {
+      "id": "anger",
+      "order": 3,
+      "name": "怒り"
+    },
+    {
+      "id": "discouragement",
+      "order": 4,
+      "name": "気落ち"
+    },
+    {
+      "id": "decisions",
+      "order": 5,
+      "name": "選択"
+    },
+    {
+      "id": "friendship",
+      "order": 6,
+      "name": "友情"
+    }
+  ],
+  "locale": "ja",
+  "sources": [
+    {
+      "id": "resurrection",
+      "url": "https://www.jw.org/ja/聖書の教え/質問/復活とは何ですか/",
+      "checkedAt": "2026-11-02",
+      "title": "復活とは何ですか"
+    },
+    {
+      "id": "neutrality",
+      "url": "https://www.jw.org/ja/エホバの証人/よくある質問/政治-中立/",
+      "checkedAt": "2026-11-02",
+      "title": "エホバの証人が政治的中立を保つのはなぜですか"
+    },
+    {
+      "id": "anger",
+      "url": "https://www.jw.org/ja/聖書の教え/質問/聖書-怒り/",
+      "checkedAt": "2026-11-02",
+      "title": "怒りについて聖書はどんなことを教えていますか"
+    },
+    {
+      "id": "discouragement",
+      "url": "https://www.jw.org/ja/聖書の教え/質問/気落ちしたとき聖書は役立つ/",
+      "checkedAt": "2026-11-02",
+      "title": "気落ちしたとき，聖書は役立ちますか"
+    },
+    {
+      "id": "decisions",
+      "url": "https://www.jw.org/ja/聖書の教え/質問/後悔しない選択-聖書/",
+      "checkedAt": "2026-11-02",
+      "title": "聖書には，後悔しない選択をするためのヒントが載っていますか"
+    },
+    {
+      "id": "friendship",
+      "url": "https://www.jw.org/ja/聖書の教え/質問/友情-聖書/",
+      "checkedAt": "2026-11-02",
+      "title": "友情について聖書にはどんなことが書いてありますか"
+    }
+  ],
+  "questions": [
+    {
+      "revision": 1,
+      "id": "grief-001",
+      "situation": "家族を亡くした人と、復活の希望について話したい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "ヨハネ 5:28-29",
+          "id": "a"
+        },
+        {
+          "reference": "ローマ 13:1",
+          "id": "b"
+        },
+        {
+          "reference": "格言 27:17",
+          "id": "c"
+        },
+        {
+          "reference": "ヤコブ 1:5",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「どのように復活するか」で、墓にいる人たちが生き返ることの根拠として挙げられているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、イエスによって死者が生き返る希望を説明し、この参照を挙げています。",
+      "evidenceReference": "ヨハネ 5:28-29",
+      "active": true,
+      "sourceId": "resurrection",
+      "distractorRationale": {
+        "d": "知恵を求める祈りに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "友との相互の成長に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "政府の権威への服従に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "どのように復活するか：墓にいる人が生き返ること",
+      "categoryId": "grief"
+    },
+    {
+      "revision": 1,
+      "id": "grief-002",
+      "situation": "亡くなった人に再び会うことを神が願っている、という説明を確認したい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "ヨブ 14:15",
+          "id": "a"
+        },
+        {
+          "reference": "格言 17:17",
+          "id": "b"
+        },
+        {
+          "reference": "フィリピ 4:13",
+          "id": "c"
+        },
+        {
+          "reference": "ローマ 13:1",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の終盤で、神が亡くなった人に再び会いたいと願っていることに結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、神が死者を生き返らせたいと願っていることを説明する際に、この参照を挙げています。",
+      "evidenceReference": "ヨブ 14:15",
+      "active": true,
+      "sourceId": "resurrection",
+      "distractorRationale": {
+        "d": "政府の権威への服従に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "対処する力に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "苦難の時にも支える友情に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "聖書の答え：終盤の神の願いについての説明",
+      "categoryId": "grief"
+    },
+    {
+      "revision": 1,
+      "id": "neutrality-001",
+      "situation": "なぜエホバの証人は政党や候補者に投票しないのか、と尋ねられた。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "ヨハネ 17:14,16",
+          "id": "a"
+        },
+        {
+          "reference": "格言 14:15",
+          "id": "b"
+        },
+        {
+          "reference": "詩編 34:18",
+          "id": "c"
+        },
+        {
+          "reference": "ヨブ 14:15",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事で、弟子たちが世の一部ではないというイエスの教えに結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、イエスの教えに従うことを政治的中立の理由の一つとし、この参照を挙げています。",
+      "evidenceReference": "ヨハネ 17:14,16",
+      "active": true,
+      "sourceId": "neutrality",
+      "distractorRationale": {
+        "d": "神が死者に再び会うことを願う説明に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "心が打ち砕かれた人への神の配慮に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "考えてから選択することに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "イエスの手本に従う：最初の箇条書き",
+      "categoryId": "neutrality"
+    },
+    {
+      "revision": 1,
+      "id": "neutrality-002",
+      "situation": "政治的中立を保つことと、政府への敬意が両立することを説明したい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "ローマ 13:1",
+          "id": "a"
+        },
+        {
+          "reference": "ヨハネ 5:28-29",
+          "id": "b"
+        },
+        {
+          "reference": "格言 27:17",
+          "id": "c"
+        },
+        {
+          "reference": "詩編 37:8",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「政府に対する敬意」で、権威に従う命令の根拠として挙げられているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、政治に参加しなくても政府の権威を敬う立場を説明し、この参照を挙げています。",
+      "evidenceReference": "ローマ 13:1",
+      "active": true,
+      "sourceId": "neutrality",
+      "distractorRationale": {
+        "d": "怒りを手放すことに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "友との相互の成長に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "死者の復活に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "政府に対する敬意：権威への服従",
+      "categoryId": "neutrality"
+    },
+    {
+      "revision": 1,
+      "id": "anger-001",
+      "situation": "怒りを爆発させると周囲にも害が及ぶことを思い出したい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "格言 29:22",
+          "id": "a"
+        },
+        {
+          "reference": "ヤコブ 1:5",
+          "id": "b"
+        },
+        {
+          "reference": "ヨハネ 5:28-29",
+          "id": "c"
+        },
+        {
+          "reference": "格言 17:17",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の冒頭で、怒りの爆発が本人や周囲を傷つけることに結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、怒りを爆発させることの害を説明する冒頭で、この参照を挙げています。",
+      "evidenceReference": "格言 29:22",
+      "active": true,
+      "sourceId": "anger",
+      "distractorRationale": {
+        "d": "苦難の時にも支える友情に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "死者の復活に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "知恵を求める祈りに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "聖書の答え：冒頭の怒りの害",
+      "categoryId": "anger"
+    },
+    {
+      "revision": 1,
+      "id": "anger-002",
+      "situation": "腹が立った時に、悪い行動に至る前に気持ちを抑えたい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "詩編 37:8",
+          "id": "a"
+        },
+        {
+          "reference": "ローマ 13:1",
+          "id": "b"
+        },
+        {
+          "reference": "格言 27:17",
+          "id": "c"
+        },
+        {
+          "reference": "ヨブ 14:15",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「怒りたくなったとき，どうしますか」で、怒りと激怒を手放す勧めに結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、後悔する行動をする前に怒りを抑える説明で、この参照を挙げています。",
+      "evidenceReference": "詩編 37:8",
+      "active": true,
+      "sourceId": "anger",
+      "distractorRationale": {
+        "d": "神が死者に再び会うことを願う説明に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "友との相互の成長に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "政府の権威への服従に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "怒りたくなったとき，どうしますか：後悔する前に抑える",
+      "categoryId": "anger"
+    },
+    {
+      "revision": 1,
+      "id": "discouragement-001",
+      "situation": "気落ちしていて、問題に対処する力を求めて祈りたい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "フィリピ 4:13",
+          "id": "a"
+        },
+        {
+          "reference": "格言 29:22",
+          "id": "b"
+        },
+        {
+          "reference": "ヨハネ 17:14,16",
+          "id": "c"
+        },
+        {
+          "reference": "格言 27:17",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「力を与える」で、問題に対処する力を求める祈りの説明に結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、問題がすべて取り除かれなくても対処する力が与えられる、という説明でこの参照を挙げています。",
+      "evidenceReference": "フィリピ 4:13",
+      "active": true,
+      "sourceId": "discouragement",
+      "distractorRationale": {
+        "d": "友との相互の成長に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "世の一部ではないという教えに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "怒りの爆発の害に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "神は，気落ちした人をどのように助けてくださいますか：力を与える",
+      "categoryId": "discouragement"
+    },
+    {
+      "revision": 1,
+      "id": "discouragement-002",
+      "situation": "心が打ち砕かれたように感じる時に、神が近くにいることを思い出したい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "詩編 34:18",
+          "id": "a"
+        },
+        {
+          "reference": "格言 14:15",
+          "id": "b"
+        },
+        {
+          "reference": "ローマ 13:1",
+          "id": "c"
+        },
+        {
+          "reference": "ヨブ 14:15",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「力を与える」で、心が打ち砕かれた人の近くに神がいるという説明に結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、深く気落ちした人への神の配慮を説明する際に、この参照を挙げています。",
+      "evidenceReference": "詩編 34:18",
+      "active": true,
+      "sourceId": "discouragement",
+      "distractorRationale": {
+        "d": "神が死者に再び会うことを願う説明に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "政府の権威への服従に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "考えてから選択することに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "神は，気落ちした人をどのように助けてくださいますか：心の打ち砕かれた人",
+      "categoryId": "discouragement"
+    },
+    {
+      "revision": 1,
+      "id": "decisions-001",
+      "situation": "大切な選択を急いで決めそうになっている。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "格言 14:15",
+          "id": "a"
+        },
+        {
+          "reference": "ヨハネ 5:28-29",
+          "id": "b"
+        },
+        {
+          "reference": "詩編 34:18",
+          "id": "c"
+        },
+        {
+          "reference": "格言 17:17",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「急いで決めない」で、一歩ごとによく考える人についての説明に結び付けているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、急がず考えてから選択するという助言で、この参照を挙げています。",
+      "evidenceReference": "格言 14:15",
+      "active": true,
+      "sourceId": "decisions",
+      "distractorRationale": {
+        "d": "苦難の時にも支える友情に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "心が打ち砕かれた人への神の配慮に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "死者の復活に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "後悔しない選択をするためのヒント：急いで決めない",
+      "categoryId": "decisions"
+    },
+    {
+      "revision": 1,
+      "id": "decisions-002",
+      "situation": "選択に迷い、神に知恵を求めて祈りたい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "ヤコブ 1:5",
+          "id": "a"
+        },
+        {
+          "reference": "格言 29:22",
+          "id": "b"
+        },
+        {
+          "reference": "ローマ 13:1",
+          "id": "c"
+        },
+        {
+          "reference": "ヨハネ 17:14,16",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の、神に良いアドバイスを求めて祈るという箇条書きの冒頭で挙げられているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、神に助言を求めて祈るという勧めの冒頭で、この参照を挙げています。",
+      "evidenceReference": "ヤコブ 1:5",
+      "active": true,
+      "sourceId": "decisions",
+      "distractorRationale": {
+        "d": "世の一部ではないという教えに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "政府の権威への服従に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "怒りの爆発の害に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "後悔しない選択をするためのヒント：神に祈る箇条書きの冒頭",
+      "categoryId": "decisions"
+    },
+    {
+      "revision": 1,
+      "id": "friendship-001",
+      "situation": "友達同士で良い影響を与え合うことを説明したい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "格言 27:17",
+          "id": "a"
+        },
+        {
+          "reference": "ローマ 13:1",
+          "id": "b"
+        },
+        {
+          "reference": "ヨハネ 5:28-29",
+          "id": "c"
+        },
+        {
+          "reference": "ヤコブ 1:5",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の冒頭で、友達と互いに成長できることの根拠として挙げられているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、友達が互いの良いところを引き出し合うことを説明する冒頭で、この参照を挙げています。",
+      "evidenceReference": "格言 27:17",
+      "active": true,
+      "sourceId": "friendship",
+      "distractorRationale": {
+        "d": "知恵を求める祈りに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "死者の復活に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "政府の権威への服従に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "聖書の答え：冒頭の互いの成長",
+      "categoryId": "friendship"
+    },
+    {
+      "revision": 1,
+      "id": "friendship-002",
+      "situation": "苦しい時にも支えてくれる友達の大切さを考えたい。",
+      "correctOptionId": "a",
+      "options": [
+        {
+          "reference": "格言 17:17",
+          "id": "a"
+        },
+        {
+          "reference": "格言 14:15",
+          "id": "b"
+        },
+        {
+          "reference": "ヨブ 14:15",
+          "id": "c"
+        },
+        {
+          "reference": "詩編 37:8",
+          "id": "d"
+        }
+      ],
+      "prompt": "記事の「良い友達とは？」で、いつでも愛を示し苦難の時に頼れる友について挙げられているのは、次のどの聖句ですか。",
+      "explanation": "この記事は、困難な時にも支えになる友の説明で、この参照を挙げています。",
+      "evidenceReference": "格言 17:17",
+      "active": true,
+      "sourceId": "friendship",
+      "distractorRationale": {
+        "d": "怒りを手放すことに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "c": "神が死者に再び会うことを願う説明に関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。",
+        "b": "考えてから選択することに関連する参照であり、指定された記事のこの論点を裏付ける参照ではない。"
+      },
+      "sourceLocator": "良い友達とは？：真の友と苦難についての箇条書き",
+      "categoryId": "friendship"
+    }
+  ],
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-02.1"
+}
