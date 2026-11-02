@@ -43,3 +43,13 @@
 4. JSONを書き出し、別ブラウザ/新端末で読み込み、確認後に復元。
 
 実機のOS/ブラウザ版と結果は、実施後に追記する。
+
+## 公開結果
+
+- ソースの最終ローカル検証commit: `25602482f9c5ad10fceee2f5d247830f8a194f03`。`npm run check`成功、単体/結合9件・E2E9件成功。seed変更なし。
+- 公開URL: https://genki140.github.io/verse-practice/
+- GitHub: https://github.com/genki140/verse-practice
+- 初回Actions: https://github.com/genki140/verse-practice/actions/runs/41377924454 （build/deployともsuccess、commit fefba11）。GitHub Pagesはworkflow公開・HTTPS有効。
+- 初回公開版で `node scripts/verify-public.mjs` 成功。index/manifest/SW/192・512アイコン/apple-touch-iconすべてHTTP200。SW active=activated、scope=`https://genki140.github.io/verse-practice/`。
+- 公開版で390px表示、オフライン新規ページ起動、2問回答、回答後reload、結果再訪に成功。初回ホームの通信先originは `https://genki140.github.io` のみ。外部フォント・広告・解析への通信なし。
+- ローカル検証後の微調整（極端な参照範囲でも節配列を大量生成しない、320pxカテゴリーを1列、ブランドリンク44px）を最終mainへ反映。同じActionsで配信する。初回公開でのブラウザ検証と、最終版のローカル検証は別々の証拠として記載した。
