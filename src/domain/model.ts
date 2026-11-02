@@ -5,8 +5,14 @@ const text = (n: number) =>
     .string()
     .min(1)
     .refine((s) => [...s].length <= n, "文字数超過");
-const id = z.string().max(80).regex(/^[a-z0-9-]+$/);
-const contentVersion=z.string().regex(/^\d{4}-\d{2}-\d{2}\.\d+$/).refine(s=>z.iso.date().safeParse(s.split('.')[0]).success,'日付不正');
+const id = z
+  .string()
+  .max(80)
+  .regex(/^[a-z0-9-]+$/);
+const contentVersion = z
+  .string()
+  .regex(/^\d{4}-\d{2}-\d{2}\.\d+$/)
+  .refine((s) => z.iso.date().safeParse(s.split(".")[0]).success, "日付不正");
 const date = z.string().datetime();
 export const sourceSchema = z
   .object({
@@ -64,9 +70,17 @@ export const questionSchema = z
         ? {
             book: m[1],
             chapter: m[2],
-            verses: m[3].split(",").flatMap((x) => {
+            ranges: m[3].split(",").map((x) => {
               const [a, b] = x.split("-").map(Number);
-              return Array.from({ length: (b || a) - a + 1 }, (_, i) => a + i);
+              const end = b ?? a;
+              if (
+                !Number.isSafeInteger(a) ||
+                !Number.isSafeInteger(end) ||
+                a < 1 ||
+                end < a
+              )
+                fail("節の範囲が不正");
+              return { start: a, end };
             }),
           }
         : null;
@@ -80,7 +94,9 @@ export const questionSchema = z
           b &&
           a.book === b.book &&
           a.chapter === b.chapter &&
-          a.verses.some((v) => b.verses.includes(v))
+          a.ranges.some((x) =>
+            b.ranges.some((y) => x.start <= y.end && y.start <= x.end),
+          )
         )
           fail("選択肢の節が重複");
       }

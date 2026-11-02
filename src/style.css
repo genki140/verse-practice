@@ -36,6 +36,7 @@ header {
   border-bottom: 1px solid #dfe5dc;
 }
 .brand {
+  min-height: 44px;
   text-decoration: none;
   font-size: 21px;
   letter-spacing: -0.6px;
@@ -422,5 +423,20 @@ footer {
     scroll-behavior: auto !important;
     animation: none !important;
     transition: none !important;
+  }
+}
+@media (max-width: 360px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+  .category,
+  .category.all {
+    min-height: 78px;
+  }
+  .category strong {
+    font-size: 15px;
+  }
+  .category .small {
+    font-size: 12px;
   }
 }
