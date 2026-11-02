@@ -1,6 +1,23 @@
 # Verse Practice
 
-日本語・スマートフォン中心の聖句想起トレーニングPWAの実装用仕様書。作成日: 2026-11-02（日本時間）。このフォルダ全体が、単独で開き直せるプロジェクトルートです。現段階は仕様策定のみで、アプリコード・依存環境・公開先は未作成です。
+日本語・スマートフォン中心の聖句想起トレーニングPWA。6カテゴリー12問、四択、解説、達成率、端末内履歴、再開、JSONバックアップ、オフライン練習に対応します。個人学習用の非公式アプリです。このフォルダが独立したプロジェクトルートです。
+
+## 利用・開発
+
+- 公開先: https://genki140.github.io/verse-practice/
+- ソース: https://github.com/genki140/verse-practice
+- Node 24.22.1とnpmを使用。依存はlockfileに固定。
+
+```sh
+npm ci
+npm run dev
+```
+
+本番相当の確認は `npm run check` → `npx playwright install chromium` → `npm run test:e2e`。`npm run preview` で `/verse-practice/` を開きます。CIではLinuxのChromiumで同じ検証を実行し、成功したmainのdistだけをPagesへ公開します。distや個人バックアップはGit管理しません。
+
+最初にオンラインで設定画面の「オフラインで練習できます」を確認してください。iPhoneはSafariの共有メニュー→ホーム画面に追加、Androidはブラウザのインストールメニューで追加できます。原典リンクを開くには通信が必要です。履歴の移行はJSONを書き出して新しい端末で復元します。
+
+検証の条件と未実施項目は `docs/verification.md`、実装時の判断は `docs/implementation-decisions.md` を参照してください。以下の仕様策定時の開始指示は履歴として残しています。実装・公開は今回の明示依頼に基づくものです。
 
 ## 次のエージェントが読む順序
 
